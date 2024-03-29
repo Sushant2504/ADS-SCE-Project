@@ -4,13 +4,13 @@ import 'package:flutter/widgets.dart';
 class MyTextField extends StatelessWidget{
   final controller;
   final String hintText;
-  final bool obcureText;
+  final bool obscureText;
 
   const MyTextField({
     super.key,
     @required this.controller,
     required this.hintText,
-    required this.obcureText,
+    required this.obscureText,
   });
 
   @override
@@ -19,7 +19,7 @@ class MyTextField extends StatelessWidget{
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
         controller: controller,
-        obscureText: obcureText,
+        obscureText: obscureText,
         decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                      borderSide: BorderSide(color: Colors.white),
